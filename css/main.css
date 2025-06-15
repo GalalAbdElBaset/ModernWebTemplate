@@ -146,6 +146,8 @@ a {
         padding-left: 10px;
         padding-right: 10px;
         max-width: 100%;
+        overflow-x: hidden;
+
     }
 
     .header .main-nav {
