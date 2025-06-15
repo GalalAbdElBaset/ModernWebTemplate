@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 :root {
     --main-color : #2196f3;
     --main-color-alt : #1787E0;
@@ -150,7 +149,6 @@ a {
         padding-left: 10px;
         padding-right: 10px;
         max-width: 100%;
-
     }
 
     .header .main-nav {
