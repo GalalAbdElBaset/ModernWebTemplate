@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -11,6 +12,10 @@
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
     --section-background: #ececec;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
 }
 body {
     font-family: "Cairo", sans-serif;
@@ -135,6 +140,85 @@ a {
         margin: 0 auto;
     }
 }
+/* Start Responsive  */
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .header .main-nav {
+        padding: 10px 0;
+    }
+
+    .header .main-nav > li > a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .landing .container,
+    .works .container,
+    .events .container,
+    .discount,
+    .pricing .container,
+    .videos .container .holder,
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing .image img,
+    .works .container img,
+    .events .container img,
+    .discount .image img,
+    .preview img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer .container,
+    .features .container,
+    .gallery .container,
+    .articles .container,
+    .team .container,
+    .testimonials .container,
+    .services .container,
+    .stats .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .pricing .container .box,
+    .team .box,
+    .testimonials .box,
+    .features .box,
+    .gallery .box,
+    .articles .box,
+    .services .box,
+    .stats .box {
+        width: 100% !important;
+    }
+
+    .events .subscribe form {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .events .subscribe form input[type="submit"] {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* End Responsive */
 
 /* .container {
     display: flex;
@@ -431,6 +515,7 @@ body {
 @media (max-width:992px) {
     .landing .text h1 {
     font-size: 28px;
+    margin-top: 40px;
     }
     
 }
