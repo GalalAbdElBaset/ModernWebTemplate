@@ -143,7 +143,7 @@ a {
 /* Start Responsive  */
 @media (max-width: 767px) {
     body {
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .container {
         padding-left: 10px;
@@ -207,10 +207,10 @@ a {
     .events .subscribe form {
         flex-direction: column;
         width: 100%;
+        max-width: 100%;
         padding: 20px;
         border-radius: 20px;
     }
-
     .events .subscribe form input[type="submit"] {
         width: 100%;
         margin-top: 15px;
