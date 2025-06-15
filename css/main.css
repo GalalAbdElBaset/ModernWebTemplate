@@ -14,6 +14,7 @@
     --section-background: #ececec;
 }
 html, body {
+    overflow-x: hidden;
     width: 100%;
 }
 body {
@@ -142,14 +143,12 @@ a {
 /* Start Responsive  */
 @media (max-width: 767px) {
     body {
-        overflow-x: hidden;
+        overflow: hidden;
     }
-        
     .container {
         padding-left: 10px;
         padding-right: 10px;
         max-width: 100%;
-        overflow-x: hidden;
     }
 
     .header .main-nav {
